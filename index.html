@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel ="stylesheet" href ="styles.css">
+</head>
+<body>
+    <header>
+        <h1><span class="highlight">PrashantShrivastava</span>.</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#Contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="hero" id="home">
+        <div class="hero-text">
+            <p>Full Stack Web Developer</p>
+            <h2>Hi, I'm <span class="highlight">PrashantShrivastava</span></h2>
+            <h2>From <span class="highlight">India</span>.</h2>
+        </div>
+        <div class="hero-image">
+            <img src="WhatsApp Image 2025-03-16 at 16.40.55_a4a4e3e5.jpg" alt="Profile Image">
+        </div>
+    </section>
+    
+    
+    
+
+
+
+    <section class="about" id="about">
+        <div class="about-container">
+            <div class="about-image">
+                <!-- <img src="img2.jpg" alt="Profile Picture"> -->
+            </div>
+            <div class="about-content">
+                <h2>About Me</h2>
+                <p>Hi! I'm Prashant Shrivastava, a passionate web and app developer currently pursuing my BTech in Computer Science.
+                    I have a strong foundation in HTML, CSS, JavaScript, react.js and Java, with expertise in building modern, dynamic, and user-friendly web applications.
+                     I’m always eager to explore new technologies, solve complex problems, and push the boundaries of innovation in web and app development.
+                    
+                    </p>
+
+                <div class="tabs">
+                    <button class="tab-btn active" onclick="openTab(event, 'skills')">Skills</button>
+                    <button class="tab-btn" onclick="openTab(event, 'experience')">Experience</button>
+                    <button class="tab-btn" onclick="openTab(event, 'education')">Education</button>
+                </div>
+
+                <div id="skills" class="tab-content active">
+                    <h3>Teaching</h3>
+                    <p>Basic Computer & Web Design Courses</p>
+
+                    <h3>Frontend Development</h3>
+                    <p>Designing any type of website</p>
+
+                    <h3>Skills</h3>
+                    <p>  Frontend: HTML, CSS, JavaScript, React.js
+                        Problem-Solving, UI/UX Design, Cybersecurity Basics
+                        Backend: Java
+                    </p>
+                </div>
+
+                <div id="experience" class="tab-content">
+                    <h3>Freelancer</h3>
+                    <p>Worked as a freelance web developer for various clients.</p>
+
+                    <h3>Web Developer Intern</h3>
+                    <!-- <p>Interned at XYZ Company, building web applications.</p> -->
+                </div>
+
+                <div id="education" class="tab-content">
+                    <h3>B.Tech in Computer Science</h3>
+                    <p>Studying Computer Science & Engineering.</p>
+
+                    <h3>Online Certifications</h3>
+                    <p>Completed courses on web development and databases.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        function openTab(evt, tabName) {
+            let i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tab-content");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tab-btn");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            document.getElementById(tabName).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+    </script>
+
+
+
+<section class="services" id="services">
+        <h2>My Services</h2>
+        <br>
+        <br>
+        <div class="service-container">
+            <div class="service-card">
+                <span class="icon">💻</span>
+                <h3>Web Design</h3>
+                <p>I specialize in modern and responsive web design, creating visually appealing and user-friendly websites that provide a seamless experience across all devices. My approach combines aesthetics with functionality, ensuring that each website is engaging, intuitive, and performance-optimized.</p>
+                <a href="#">Learn More</a>
+            </div>
+            <div class="service-card highlighted">
+                <span class="icon">🎨</span>
+                <h3 id="UI">UI/UX Design</h3>
+                <p>I am passionate about crafting intuitive and engaging user interfaces that enhance the overall user experience. My design approach ensures that digital products are visually appealing, user-friendly, and highly functional.</p>
+                <a href="#">Learn More</a>
+            </div>
+            <div class="service-card">
+                <span class="icon">📱</span>
+                <h3>Responsive Design</h3>
+                <p>n today’s digital world, having a responsive website is essential to provide a seamless experience across all devices, including desktops, tablets, and mobile phones. I specialize in creating designs that are fluid, adaptive, and highly optimized for different screen sizes</p>
+                <a href="#">Learn More</a>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section class="work" id="portfolio">
+        <h2>My Work</h2>
+        <br>
+        <br>
+        <div class="work-container">
+            <div class="work-card">
+                <img src="img3.png" alt="Project 1">
+            </div>
+            <div class="work-card highlighted">
+                <img src="img4.png" alt="Music App">
+                <div class="overlay">
+                    <h3>Music App</h3>
+                    <p>The app connects you to the talented people around the world. Download it from the Play Store.</p>
+                    <a href="#"><span>🔗</span></a>
+                </div>
+            </div>
+            <div class="work-card">
+                <img src="Weather-app.jpg" alt="Project 3">
+            </div>
+        </div>
+        <button class="see-more">See more</button>
+    </section>
+
+
+
+
+    <section class="contact" id="Contact">
+        <h2>Contact Me</h2>
+        <br>
+        <br>
+        <div class="contact-container">
+            <div class="contact-info">
+                <p>📌 <a href="https://github.com/yourgithub" target="_blank">github.com/yourgithub</a></p>
+                <p>📞 +91-7489202191</p>
+                <div class="social-icons">
+                   <!-- Facebook -->
+                <a href="https://www.facebook.com/your-facebook" target="_blank">
+                    <i class="fa-brands fa-facebook"></i>
+                </a>
+                <!-- LinkedIn -->
+                <a href="https://www.linkedin.com/in/your-linkedin-profile" target="_blank">
+                    <i class="fa-brands fa-linkedin"></i>
+                </a>
+
+                 <!-- GitHub -->
+                <a href="https://github.com/yourgithub" target="_blank">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+
+ <a href="https://www.instagram.com/your-instagram" target="_blank">
+                    <i class="fa-brands fa-square-instagram"></i>
+                </a>
+                </div>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                
+
+                <a href="Blue and black  Developer Resume (1).pdf" download class="btn">Download CV</a>
+            </div>
+
+            <form class="contact-form" action="https://formspree.io/f/xnnpdpnn" method="POST">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" placeholder="Your Message" required></textarea>
+                <br>
+                <button type="submit" class="btn">Submit</button>
+            </form>
+          
+        </div>
+    </section>
+
+    <footer>
+        <p>Thanku ❤️</p>
+    </footer>
